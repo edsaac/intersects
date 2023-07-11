@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rescale"
+version = "0.1.0"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+docs = [
+    "sphinx",
+    "myst-parser",
+    "furo"
+] 
